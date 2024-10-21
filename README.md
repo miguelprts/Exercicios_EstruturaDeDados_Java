@@ -6,4 +6,4 @@ Cada estrutura estudada nesta disciplina, possui seu respectivo diretório e exe
 
 ## Duplique este repositório, utilizando o comando:
 ```bash
-git clone https://github.com/miguelprts/Exercicios_EstDeDados_Java.git
+git clone https://github.com/miguelprts/Exercicios_EstruturaDeDados_Java
