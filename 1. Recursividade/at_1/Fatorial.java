@@ -13,6 +13,8 @@ public class Fatorial {
 
         } catch (Exception e) {
             System.out.println("Insira um número inteiro!");
+            System.exit(1);
+
         }
 
         for(long i = valor; i > 0; i--){

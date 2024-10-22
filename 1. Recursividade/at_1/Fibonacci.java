@@ -11,9 +11,9 @@ public class Fibonacci {
         try {
             System.out.println("Insira um número inteiro: ");
             valor = teclado.nextLong();
-
         } catch (Exception e) {
             System.out.print("Insira um número inteiro!");
+            System.exit(1);
         }
 
         long p = 0, s = 1;
