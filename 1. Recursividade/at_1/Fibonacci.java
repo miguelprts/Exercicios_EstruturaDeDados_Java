@@ -19,7 +19,6 @@ public class Fibonacci {
         long p = 0, s = 1;
 
         for (long i = 1; i < valor; i++) {
-
             resultado = p + s;
             p = s;
             s = resultado;
