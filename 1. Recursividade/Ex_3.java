@@ -29,7 +29,6 @@ public class Ex_3 {
        if(num%divisor == 0){
             return false;
         }            
-        return calculo(num, divisor-1);
-       
+        return calculo(num, divisor-1);       
     } 
 }

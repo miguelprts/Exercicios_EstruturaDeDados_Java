@@ -23,5 +23,4 @@ public class Ex_4 {
             return n1;
         return n1 + calculo(n1, n2-1);
     }
-     
 }
