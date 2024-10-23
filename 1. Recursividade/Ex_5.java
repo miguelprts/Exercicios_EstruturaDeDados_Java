@@ -19,7 +19,6 @@ public class Ex_5 {
             int resultado = calculo(n1, n2);
             System.out.printf("MDC(%d, %d) = %d", n1, n2, resultado);
         }
-        
         teclado.close();
     }
 
