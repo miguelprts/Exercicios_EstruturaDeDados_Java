@@ -14,17 +14,19 @@ public class Fibonacci {
             System.exit(1);
         }
 
-       int count = 0;
-       while (count < valor) {
-            System.out.println(fibo(valor));
+        int count = 0;
+        while (count < valor) {
+            System.out.println(fibo(count));
             count++;
-       }
+        }
         teclado.close();
     }
 
-    public static long fibo(long valor){
-        long resultado = 0, p = 0, s = 0;
-        for (long i = 1; i < valor; i++) {
+    public static long fibo(long valor) {
+        if (valor == 0) return 0;
+        if (valor == 1) return 1;
+        long p = 0, s = 1, resultado = 0;
+        for (long i = 2; i <= valor; i++) {
             resultado = p + s;
             p = s;
             s = resultado;
