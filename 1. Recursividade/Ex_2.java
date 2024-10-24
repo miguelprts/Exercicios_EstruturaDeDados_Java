@@ -12,21 +12,25 @@ public class Ex_2 {
             System.err.println("Informe um número inteiro!");
             System.exit(1);
         }
+
         long resultado = 0;
-        if(n == 0)
-            resultado = 1;
-        else if (n > 0) 
-            resultado = calculo(n, 2);
-        else {
-            System.out.println("Informe apenas números positivos!");
-            System.exit(1);
-        }
+            resultado = chamarCalculo(n);
+
         System.out.println("2^" + n +" = " + resultado);
         teclado.close();
     }
-    public static long calculo(long n, long resultado){
-        if(n == 1)
+    public static long chamarCalculo(long n){
+        return calculo(n, 2);
+    } 
+    private static long calculo(long n, long resultado){
+        if(n == 0)
+            return 1;
+        else if(n == 1)
             return resultado;
-        return calculo(n-1, resultado*2);
+        else if(n < 0){
+            throw new Error("Insira apenas números positivos");
+        }
+        else
+            return calculo(n-1, resultado*2);
     } 
 }

@@ -16,7 +16,10 @@ public class Ex_4 {
         teclado.close();
     }
     public static int calculo(int n1, int n2){
-        if(n2 == 1)
+        if (n2 < 0) {
+            return -calculo(n1, -n2);
+        }
+        else if(n2 == 1)
             return n1;
         return n1 + calculo(n1, n2-1);
     }

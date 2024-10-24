@@ -12,24 +12,29 @@ public class Ex_3 {
             System.exit(1);
         }
 
-        if(n == 1 || n == 0)
-            System.out.println("Não é primo!");
-        else if(n < 0)
-            System.out.println("Não é possível calcular número primo de número negativo!");
+        if(n<=1)
+            System.out.println("Não tem número primo para " + n+".");
         else{
-            boolean ePrimo = calculo(n, n-1);
+            boolean ePrimo = realizarCalculo(n);
             System.out.println((ePrimo)? n + " é primo!" : n + " não é primo!"); 
         }
         teclado.close();
+    }
+
+    public static boolean realizarCalculo(int n){
+        return calculo(n, n-1);
     }
 
     public static boolean calculo(int num, int divisor){
        // se algum número sem ser 1, ou o próprio n até aquele valor, tiver resto 0, ele n é primo
        if(divisor == 1)
             return true; 
-       if(num%divisor == 0){
+       else if(num%divisor == 0){
             return false;
-       }            
+       } 
+       else if(num < 2){
+            return false;
+       }      
         return calculo(num, divisor-1);       
     } 
 }
