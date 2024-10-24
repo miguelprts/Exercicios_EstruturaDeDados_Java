@@ -5,12 +5,12 @@ public class Ex_5 {
         Scanner teclado = new Scanner(System.in);
         int n1 = 0, n2 = 0;
             
-        System.out.println("Insira dois números inteiro: ");
+        System.out.println("Insira dois números inteiros: ");
         try {
             n1 = teclado.nextInt();
             n2 = teclado.nextInt();
         } catch (Exception e) {
-        System.out.println("Insira número inteiro!");        
+        System.out.println("Insira números inteiros!");        
         }
 
         if(n1 == 0 || n2==0)

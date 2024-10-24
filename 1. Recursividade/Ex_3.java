@@ -12,11 +12,12 @@ public class Ex_3 {
             System.exit(1);
         }
 
-        if(n == 1 || n==0)
+        if(n == 1 || n == 0)
             System.out.println("Não é primo!");
+        else if(n < 0)
+            System.out.println("Não é possível calcular número primo de número negativo!");
         else{
             boolean ePrimo = calculo(n, n-1);
-
             System.out.println((ePrimo)? n + " é primo!" : n + " não é primo!"); 
         }
         teclado.close();

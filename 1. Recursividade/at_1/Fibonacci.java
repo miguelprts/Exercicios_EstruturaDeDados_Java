@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Fibonacci {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-
         long valor = 0, resultado = 0;
 
         try {
@@ -23,10 +22,7 @@ public class Fibonacci {
             p = s;
             s = resultado;
         }
-
         System.out.printf("fibo(%d) = %d", valor, resultado);
-
         teclado.close();
     }
-
 }

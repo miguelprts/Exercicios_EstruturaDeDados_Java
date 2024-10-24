@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Ex_4 {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-
         System.out.println("Informe dois números: ");
         int n1=0, n2=0;
         try {
@@ -12,9 +11,7 @@ public class Ex_4 {
         } catch (Exception e) {
             System.out.println("Insira um número inteiro! ");
         }
-
         int resultado = calculo(n1, n2);
-
         System.out.printf("\n%d*%d = %d",n1,n2, resultado);
         teclado.close();
     }
