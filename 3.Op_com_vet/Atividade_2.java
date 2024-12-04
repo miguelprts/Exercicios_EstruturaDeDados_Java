@@ -26,7 +26,7 @@ public class Atividade_2 {
         }
     }
     public static int[] inicio(int[] vet, int pos, int ultimaPosicao, int n){
-        for ( int i = ultimaPosicao +1; i > 0; --i )
+        for (int i = ultimaPosicao +1; i > 0; --i )
             vet [i] = vet [i-1];
         vet [0] = n;
         return vet;

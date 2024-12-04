@@ -2,7 +2,7 @@ public class Atividade3 {
     public static boolean operacao(int[] v, int valor, int inicio, int fim){
         if(inicio > fim)
             return false;
-
+                    
         int meio = (inicio + fim) / 2;
 
         if(valor == v[meio])
