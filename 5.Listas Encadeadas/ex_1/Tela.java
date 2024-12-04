@@ -44,7 +44,7 @@ public class Tela extends JFrame implements ActionListener{
     public Tela() {
         super("Lista");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(600, 500);
+        setSize(1000, 1000);
         //setResizable(false);
         setLocationRelativeTo(null);
 
@@ -55,13 +55,16 @@ public class Tela extends JFrame implements ActionListener{
         mn_remover.addActionListener(this);
         //corzinhas
         btnAdicionar.setBackground(Color.PINK);
-        btnExcluir.setBackground(Color.PINK);
+        btnExcluir.setBackground(Color.WHITE);
 
         //barra de menu
         menu.add(mn_adicionar);
         menu.add(mn_remover);
         barra.add(menu);
         setJMenuBar(barra);
+
+        mn_remover.setEnabled(false);
+        btnExcluir.setEnabled(false);
 
         try {
             MaskFormatter telep = new MaskFormatter("(##)######-####");
@@ -114,6 +117,12 @@ public class Tela extends JFrame implements ActionListener{
             }catch(Exception ex){
                 JOptionPane.showMessageDialog(null, ex.getMessage(), "ERRO", JOptionPane.ERROR_MESSAGE);
             }
+        }
+        if(e.getSource() == btnCancelar){
+            inputCodigo.setText("");
+            inputNome.setText("");
+            inputTelefone.setText("");
+
         }
     }
     public static void main(String[] args) {
