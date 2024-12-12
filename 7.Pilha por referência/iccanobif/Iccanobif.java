@@ -4,7 +4,7 @@ public class Iccanobif {
 
     public void push(Numero novo){
         if(tamanho!=0)
-            novo.proximo = topo;
+            novo.setProximo(topo);
         topo = novo;
         ++tamanho;
     }
@@ -12,7 +12,7 @@ public class Iccanobif {
         if(tamanho == 0)
             throw new Exception("Lista sem elementos");
         Numero retorno = topo;
-        topo = topo.proximo;
+        topo = topo.getProximo();
         --tamanho;
         return retorno;
     }   

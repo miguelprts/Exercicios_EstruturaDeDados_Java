@@ -19,7 +19,7 @@ public class Main{
 
         try{
             while(!iccanobif.isVazia()){
-                System.out.println(iccanobif.pop().elemento);
+                System.out.println(iccanobif.pop().getElemento());
             }
         } catch(Exception e){
             System.out.println(e.getMessage());
