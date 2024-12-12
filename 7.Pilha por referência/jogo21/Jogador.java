@@ -5,10 +5,6 @@ public class Jogador {
     int pontuacao = 0;
     int tamanho = 0;
     Random random = new Random();
-
-    public Jogador(){
-        push(random.nextInt(10) + 1);
-    }
     
     public void push(int valor){
         Carta nova = new Carta(valor);
@@ -19,9 +15,10 @@ public class Jogador {
 
         if(pontuacao < 21)
             pontuacao += valor;
+
         else{
             try{
-            pop();
+                pop();
             }catch(Exception e){
                 System.out.println("Erro: "+e.getMessage());
             }
