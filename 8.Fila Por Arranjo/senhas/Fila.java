@@ -18,7 +18,6 @@ public class Fila{
             throw new Exception("Senhas não distribuídas!");
         
         Senha retorno = fila[primeiro++];
-        tamanho --; 
         if(primeiro == 50)
             primeiro = 0;
             
