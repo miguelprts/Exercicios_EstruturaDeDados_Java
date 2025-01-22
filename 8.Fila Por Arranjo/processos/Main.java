@@ -10,7 +10,8 @@ public class Main {
             System.out.println("2. Próximo processo");
             System.out.println("3. Imprimir os processos");
             System.out.println("4. Localizar um processo");
-            System.out.println("5. Sair");
+            System.out.println("5. Excluir tudo");
+            System.out.println("6. Sair");
 
             int opc = 0;
             try {
@@ -58,6 +59,10 @@ public class Main {
                 }
             }
             else if(opc == 5){
+                f.excluirTodos();
+                System.out.println("Excluido com sucesso.");
+            }
+            else if(opc == 6){
                 break;
             }
             else
