@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        Fila fila = new Fila();
+        FilaAvioes fila = new FilaAvioes();
 
         while(true){
             System.out.println("Senhas disponíveis: "+ (50 - fila.senha));

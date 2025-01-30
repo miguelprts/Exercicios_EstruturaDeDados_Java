@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class Main{
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        Fila a = new Fila();
-        Fila b = new Fila();
-        Fila q = new Fila();
+        FilaAvioes a = new FilaAvioes();
+        FilaAvioes b = new FilaAvioes();
+        FilaAvioes q = new FilaAvioes();
 
         while(true){
             System.out.println("Insira um nome: ");
