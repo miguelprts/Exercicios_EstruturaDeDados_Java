@@ -12,21 +12,19 @@ public class App {
         FilaAvioes filaFinal = new FilaAvioes();
         int qtdFor = 0;
         
-        String opc = teclado.nextLine().trim(); // Lê a primeira opção
+        String opc = teclado.nextLine().trim(); 
 
-        while (!opc.equals("0")) { // Enquanto não for "0", continuar lendo
-            if (opc.isEmpty()) continue; // Ignorar entrada vazia
-
-            String nomeA = teclado.nextLine().trim(); // Lê o nome do avião
+        while (!opc.equals("0")) { 
+            if (opc.isEmpty()) continue; 
+            String nomeA = teclado.nextLine().trim(); 
 
             if (nomeA.isEmpty()) continue;
 
             if (nomeA.charAt(0) == '-') { 
-                opc = nomeA; // Atualiza a opção para próxima fila
+                opc = nomeA; 
             } else if (nomeA.charAt(0) == '0') { 
-                break; // Sai do loop
+                break; 
             } else { 
-                // Adiciona o avião à fila correspondente
                 switch (opc) {
                     case "-4":
                         filaLeste.add(nomeA);
@@ -43,11 +41,9 @@ public class App {
                     default:
                         break;
                 }
-
                 qtdFor++;
             }
         }
-
          for (int i = 0; i != qtdFor; i++) {
             try {
                 if(filaOeste.tamanho != 0){
@@ -66,13 +62,11 @@ public class App {
                 System.out.println(e.getMessage());
             }
          }   
-
          try {
             while(filaFinal.tamanho > 0)
                 System.out.print(filaFinal.remove().getNumeracao() + " ");
          } catch (Exception e) {
             System.out.println(e.getMessage());
          }
-        
     }
 }
