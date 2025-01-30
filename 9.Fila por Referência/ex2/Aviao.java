@@ -18,7 +18,5 @@ public class Aviao {
     }
     public void setNumeracao(String numeracao) {
         this.numeracao = numeracao;
-    }
-
-    
+    }  
 }
