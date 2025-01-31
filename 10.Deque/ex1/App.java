@@ -5,7 +5,7 @@ public class App {
         Deque<Integer> deque = new Deque<Integer>();
 
         for (int i = 10; i > 0; i--) {
-            if((i+1)%2 == 0)
+            if((i)%2 == 0)
                 deque.addInicio(i);
             else
                 deque.addFim(i);
