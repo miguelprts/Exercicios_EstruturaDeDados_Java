@@ -14,13 +14,11 @@ public class FilaAvioes {
             ultimo.setProximo(novo);
             ultimo = novo;
         }
-        
         tamanho++;
     }
     public Aviao remove() throws Exception{
         if(tamanho == 0)
             throw new Exception("Fila vazia");
-
         Aviao retorno = primeiro; 
         primeiro = primeiro.getProximo();
         tamanho--;
