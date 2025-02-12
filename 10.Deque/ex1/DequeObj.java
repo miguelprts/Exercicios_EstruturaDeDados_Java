@@ -8,10 +8,8 @@ public class DequeObj<T> {
         this.anterior = null;
         this.proximo = null;
     }
-
     public DequeObj() {
     }
-
     public T getElemento() {
         return elemento;
     }
