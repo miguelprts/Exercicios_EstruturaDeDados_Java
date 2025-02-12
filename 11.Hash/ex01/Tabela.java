@@ -31,6 +31,7 @@ public class Tabela {
                 break;
             }
         }
+        throw new Exception("Tabela Hash cheia!");
     }
     public Livro remove(String chave) {
         int hash;
