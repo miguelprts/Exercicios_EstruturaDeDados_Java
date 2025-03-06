@@ -1,4 +1,5 @@
-pakcage ex03;
+package ex03;
+
 public class Arvore {
     Ano raiz = null;
 
