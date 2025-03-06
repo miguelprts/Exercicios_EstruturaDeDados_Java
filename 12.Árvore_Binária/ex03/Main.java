@@ -29,6 +29,8 @@ public class Main {
                 
                 System.out.println(arv.conferir(ano) == true ? "Correto" : "Incorreto");
             }
+
+            arv.raiz = null;
         }
         teclado.close();
     }
